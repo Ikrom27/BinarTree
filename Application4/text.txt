@@ -1,0 +1,15 @@
+int main()
+{
+	setlocale(LC_ALL, "rus");
+	BinaryTree* tree = new BinaryTree();
+	tree->add("b");
+	tree->add("a");
+	tree->add("c");
+	tree->add("e");
+	tree->add("f");
+	tree->display(tree, 0);
+	std::list<std::string> sl;
+	sl = tree->sort(sl);
+	for (auto i : sl) {
+		std::cout << i << " ";
+}
